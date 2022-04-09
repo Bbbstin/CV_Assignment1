@@ -64,5 +64,5 @@ print("The model used: Activation function: {0}, step size: {1}, hidden size: {2
 # 3rd element: the model's step size.
 # 4th element: the hidden layer's size.
 # 5th element: the regularization intensity of l2 (lambda).
-save([params, aa_best, ss_best, hh_best, rr_best], 'params')
-# save([params, aa_best, ss_best, hh_best, rr_best], 'params_bias')
+save([params, aa_best, ss_best, hh_best, rr_best], '../params')
+# save([params, aa_best, ss_best, hh_best, rr_best], '../params_bias')
