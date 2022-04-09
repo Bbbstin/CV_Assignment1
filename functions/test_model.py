@@ -28,8 +28,8 @@ Y_val_onehot = data[4]
 Y_test_onehot = data[5]
 
 # Load the parameters and hyperparameters, which perform the best in the VALIDATION set.
-parameters = load("./params")
-# parameters = load("./params_bias")
+parameters = load("../params")
+# parameters = load("../params_bias")
 W = parameters[0]
 activation = parameters[1]
 step_size = parameters[2]
