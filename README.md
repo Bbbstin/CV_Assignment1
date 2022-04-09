@@ -264,12 +264,10 @@ The accuracy of this model in the validation set is 98.24%, and 97.78% in the te
 
 ## 7. Further Improvement
 
-After training these huge amount of models, we found that maybe adding a bias will be helpful to improve the accuracy. Therefore, we also made some modification to the model structure. We achieve this by padding a column of 1 to $X$ and $A_1$, and change the shape of $W$ accordingly.
-$$
-Z_{1}=\left[ X,1\right]  \begin{bmatrix}W_{1}\\ b_{1}\end{bmatrix} = \left[ X,1\right]\cdot W_1'
-\\
-Z_2 = \left[ A_1,1\right]  \begin{bmatrix}W_{2}\\ b_{2}\end{bmatrix} = \left[ A_1,1\right] \cdot W_2'
-$$
+After training these huge amount of models, we found that maybe adding a bias will be helpful to improve the accuracy. Therefore, we also made some modification to the model structure. We achieve this by padding a column of 1 to X and A1$, and change the shape of W accordingly.
+
+<img width="316" alt="Screen Shot 2022-04-09 at 19 46 30" src="https://user-images.githubusercontent.com/58239326/162572756-23ed788d-f375-4e24-be2f-fb35c8388d29.png">
+
 After that, since time-limited, we just tried to add bias to the model we selected (Step size: 0.05, lambda: $10^{−5}$, Hidden layer units: 275, Activation function: Sigmoid), and it got an accuracy of 97.76% in the validation set. It has not shown any huge improvement, maybe because there will be more parameters to train, therefore, it will take longer to train. But it is hard to say whether it will generate an even better model. So, we should try it if time permitting.
 
 If you want to try the model with bias, you can just follow the instruction written in file "train_find_hp.py" and "test_model.py".
