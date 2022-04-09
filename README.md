@@ -2,6 +2,8 @@
 
 This is the first assignment of DATA130051 Computer Vision. All of the files can be founded at https://drive.google.com/drive/folders/1ZDj4w2yfVuSh9TEgspvYqWmGX1onxCgs?usp=sharing or https://github.com/Bbbstin/CV_Assignment1.
 
+If you download file "params_bias" from Google Drive, just remove the ".zip", idk why the format has been changed when I upload it to the Google Drive.
+
 ## 1. Files
 
 ### 1.1 Functions
